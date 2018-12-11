@@ -1,9 +1,10 @@
 ﻿using System;
+using System.Threading.Tasks;
 
 namespace Beteasy.RaceDataProviders
 {
     public interface IHorseRaceDataProvider
     {
-        HorseRace GetRaceData(string raceId);
+        Task<HorseRace> GetRaceDataAsync(string raceId);
     }
 }

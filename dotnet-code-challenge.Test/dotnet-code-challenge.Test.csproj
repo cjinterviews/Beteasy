@@ -18,7 +18,17 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Beteasy.RaceDataProviders\Beteasy.RaceDataProviders.csproj" />
     <ProjectReference Include="..\dotnet-code-challenge\dotnet-code-challenge.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Uk_Race_NoMarkets.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Uk_Race_Valid.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>

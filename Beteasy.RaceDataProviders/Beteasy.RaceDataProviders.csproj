@@ -5,17 +5,16 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="FeedData\Caulfield_Race1.xml" />
-    <None Remove="FeedData\Wolferhampton_Race1.json" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="FeedData\Caulfield_Race1.xml" />
-    <EmbeddedResource Include="FeedData\Wolferhampton_Race1.json" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Implementation\" />
+    <None Update="FeedData\Caulfield_Race1.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="FeedData\Wolferhampton_Race1.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>
