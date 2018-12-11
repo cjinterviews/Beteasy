@@ -23,6 +23,15 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="Aus_Race_NoRaces.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Aus_Race_EmptyFile.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Aus_Race_Valid.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="Uk_Race_NoMarkets.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

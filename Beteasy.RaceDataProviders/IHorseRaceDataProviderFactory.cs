@@ -6,6 +6,6 @@ namespace Beteasy.RaceDataProviders
 {
     public interface IHorseRaceDataProviderFactory
     {
-        IHorseRaceDataProvider GetHorseRaceDataProvider(string racecourseName);
+        IHorseRaceDataProvider GetHorseRaceDataProvider(string raceId);
     }
 }

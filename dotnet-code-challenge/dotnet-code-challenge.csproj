@@ -5,6 +5,11 @@
     <TargetFramework>netcoreapp2.0</TargetFramework>
     <AssemblyName>dotnet_code_challenge</AssemblyName>
     <RootNamespace>dotnet_code_challenge</RootNamespace>
+    <LangVersion>7.2</LangVersion>
   </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Beteasy.RaceDataProviders\Beteasy.RaceDataProviders.csproj" />
+  </ItemGroup>
 
 </Project>
