@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="FeedData\Caulfield_Race1.xml" />
+    <None Remove="FeedData\Wolferhampton_Race1.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="FeedData\Caulfield_Race1.xml" />
+    <EmbeddedResource Include="FeedData\Wolferhampton_Race1.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Implementation\" />
+  </ItemGroup>
+
+</Project>

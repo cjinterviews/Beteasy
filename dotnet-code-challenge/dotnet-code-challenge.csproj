@@ -7,8 +7,4 @@
     <RootNamespace>dotnet_code_challenge</RootNamespace>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Folder Include="FeedData\" />
-  </ItemGroup>
-
 </Project>

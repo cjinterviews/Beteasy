@@ -6,7 +6,9 @@ namespace dotnet_code_challenge
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            // In a real application, we would register the IHorseRaceDataProviderFactory with an IoC container
+            // and use DI to inject it. However in this app we manually new it up 
+
         }
     }
 }
