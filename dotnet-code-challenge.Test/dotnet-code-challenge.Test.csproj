@@ -26,6 +26,9 @@
     <None Update="Uk_Race_NoMarkets.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="Uk_Race_EmptyFile.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="Uk_Race_Valid.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

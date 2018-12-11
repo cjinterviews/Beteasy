@@ -22,6 +22,10 @@ namespace Beteasy.RaceDataProviders.Implementation
             var jsonText = await dataLoader.LoadDataAsync(raceId);
             var model = JsonConvert.DeserializeObject<UkJsonRaceData>(jsonText);
 
+            if (model?.RawData == null)
+            {
+                throw new RaceDataInvalidException("Source data missing RawData node");
+            }
             if (model.RawData.Markets?.Count != 1)
             {
                 // TODO: what if there are multiple markets? do we treat them seperately or combine their selections together? Ask the business

@@ -33,5 +33,13 @@ namespace dotnet_code_challenge.Test
             var unitUnderTest = new UkJsonRaceDataProvider(mockDataLoader);
             await Assert.ThrowsAsync<RaceDataInvalidException>(async () => await unitUnderTest.GetRaceDataAsync("mockRaceId"));
         }
+
+        [Fact]
+        public async Task EmptyFile_ThrowsRaceDataInvalidException()
+        {
+            var mockDataLoader = new MockDataLoader("Uk_Race_EmptyFile.json");
+            var unitUnderTest = new UkJsonRaceDataProvider(mockDataLoader);
+            await Assert.ThrowsAsync<RaceDataInvalidException>(async () => await unitUnderTest.GetRaceDataAsync("mockRaceId"));
+        }
     }
 }
